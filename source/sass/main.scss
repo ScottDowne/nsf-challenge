@@ -20,7 +20,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 img {
@@ -203,6 +202,10 @@ header.page-header {
 
 .expander > .expander-item-active > .expander-header::after {
   content: '-';
+}
+
+.expander > .expander-item-active > .expander-content {
+  transition: height 0.3s;
 }
 
 .expander-content {
